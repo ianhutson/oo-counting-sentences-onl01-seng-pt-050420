@@ -15,6 +15,7 @@ self.end_with?("!")
   end
 
   def count_sentences
-self..scan(/[^\.!?]+[\.!?]/).map(&:strip).count
+sentence_array = self.split(/[.?!]/)
+  return sentence_array.count
   end
 end
